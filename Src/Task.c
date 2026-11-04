@@ -29,6 +29,9 @@ u16 Task_Create(TCB_t *TaskControlBlock, TaskFunctionCallback TaskFunction,
   if (TaskFunction == NULL || TaskStack == NULL || TaskName == NULL) {
     return TASK_ERROR_INVALID_PARAM;
   }
+  if (TaskStackSize == 0) {
+    return TASK_ERROR_OUT_OF_RANGE;
+  }
 
   return TASK_OK;
 }
@@ -92,3 +95,4 @@ u16 Task_Yield(TCB_t *TaskControlBlock);
 /***********************************************************
  *  IMPLEMENTACION FUNCIONES PRIVADAS  DEL _TASK_H_        *
  ***********************************************************/
+PRUEBA
