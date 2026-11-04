@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/paula/testcube/STM_RTOS/build/Debug/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

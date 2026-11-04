@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/home/paula/testcube/STM_RTOS/build/Debug",
+  "command": "/home/paula/.local/share/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/starm-clang -DDEBUG -DRTE_DEVICE_STARTUP_STM32F1XX -I/home/paula/testcube/STM_RTOS/Inc -Wno-comment  --target=armv7m-st-none-eabi -mcpu=cortex-m3 -mfloat-abi=soft -mlittle-endian -mthumb -fstack-usage -std=gnu11 -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb -o CMakeFiles/STM_RTOS.dir/Src/syscall.c.obj -c /home/paula/testcube/STM_RTOS/Src/syscall.c",
+  "file": "/home/paula/testcube/STM_RTOS/Src/syscall.c",
+  "output": "/home/paula/testcube/STM_RTOS/build/Debug/CMakeFiles/STM_RTOS.dir/Src/syscall.c.obj"
+},
+{
+  "directory": "/home/paula/testcube/STM_RTOS/build/Debug",
+  "command": "/home/paula/.local/share/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/starm-clang -DDEBUG -DRTE_DEVICE_STARTUP_STM32F1XX -I/home/paula/testcube/STM_RTOS/Inc -Wno-comment  --target=armv7m-st-none-eabi -mcpu=cortex-m3 -mfloat-abi=soft -mlittle-endian -mthumb -fstack-usage -std=gnu11 -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb -o CMakeFiles/STM_RTOS.dir/Src/sysmem.c.obj -c /home/paula/testcube/STM_RTOS/Src/sysmem.c",
+  "file": "/home/paula/testcube/STM_RTOS/Src/sysmem.c",
+  "output": "/home/paula/testcube/STM_RTOS/build/Debug/CMakeFiles/STM_RTOS.dir/Src/sysmem.c.obj"
+},
+{
+  "directory": "/home/paula/testcube/STM_RTOS/build/Debug",
+  "command": "/home/paula/.local/share/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/starm-clang -DDEBUG -DRTE_DEVICE_STARTUP_STM32F1XX -I/home/paula/testcube/STM_RTOS/Inc -Wno-comment  --target=armv7m-st-none-eabi -mcpu=cortex-m3 -mfloat-abi=soft -mlittle-endian -mthumb -fstack-usage -std=gnu11 -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb -o CMakeFiles/STM_RTOS.dir/Src/main.c.obj -c /home/paula/testcube/STM_RTOS/Src/main.c",
+  "file": "/home/paula/testcube/STM_RTOS/Src/main.c",
+  "output": "/home/paula/testcube/STM_RTOS/build/Debug/CMakeFiles/STM_RTOS.dir/Src/main.c.obj"
+},
+{
+  "directory": "/home/paula/testcube/STM_RTOS/build/Debug",
+  "command": "/home/paula/.local/share/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/starm-clang -DDEBUG -DRTE_DEVICE_STARTUP_STM32F1XX -I/home/paula/testcube/STM_RTOS/Inc --target=armv7m-st-none-eabi -mcpu=cortex-m3 -mfloat-abi=soft -mlittle-endian -mthumb -fstack-usage -std=gnu11 -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb -x assembler-with-cpp -MP -o CMakeFiles/STM_RTOS.dir/Src/startup_stm32f103xx.S.obj -c /home/paula/testcube/STM_RTOS/Src/startup_stm32f103xx.S",
+  "file": "/home/paula/testcube/STM_RTOS/Src/startup_stm32f103xx.S",
+  "output": "/home/paula/testcube/STM_RTOS/build/Debug/CMakeFiles/STM_RTOS.dir/Src/startup_stm32f103xx.S.obj"
+}
+]

@@ -1,0 +1,214 @@
+STMicroelectronics Memory Configuration
+
+Name     Origin   Length   Bytes-Used %age-Used Attributes
+RAM 0x20000000 0x005000 0x000608        7%  rwx     
+FLASH 0x8000000 0x010000 0x000200        0%  rx      
+
+     VMA      LMA     Size Align Out     In      Symbol
+       0        0        0     1 _estack = ORIGIN(RAM) + LENGTH(RAM)
+       0        0        0     1 _Min_Heap_Size = 0x200
+       0        0        0     1 _Min_Stack_Size = 0x400
+ 8000000  8000000      130     1 .isr_vector
+ 8000000  8000000        0     1         . = ALIGN(4)
+ 8000000  8000000      130     1         CMakeFiles/STM_RTOS.dir/Src/startup_stm32f103xx.S.obj:(.isr_vector)
+ 8000000  8000000      130     1                 g_pfnVectors
+ 8000130  8000130        0     1         . = ALIGN(4)
+ 8000130  8000130       bc     4 .text
+ 8000130  8000130        0     1         . = ALIGN(4)
+ 8000130  8000130       12     4         CMakeFiles/STM_RTOS.dir/Src/main.c.obj:(.text)
+ 8000130  8000130        0     1                 $t
+ 8000131  8000131       12     1                 main
+ 8000144  8000144       10     4         /home/paula/.local/share/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_soft_nofp_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_read_tp.S.o):(.text._initial_set_tls)
+ 8000144  8000144        0     1                 $t
+ 8000145  8000145        6     1                 _initial_set_tls
+ 800014c  800014c        0     1                 $d
+ 8000154  8000154       14     4         /home/paula/.local/share/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_soft_nofp_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_set_tls.c.o):(.text._set_tls)
+ 8000154  8000154        0     1                 $t
+ 8000155  8000155       14     1                 _set_tls
+ 8000160  8000160        0     1                 $d
+ 8000168  8000168       50     4         CMakeFiles/STM_RTOS.dir/Src/startup_stm32f103xx.S.obj:(.text.Reset_Handler)
+ 8000168  8000168        0     1                 $t
+ 8000169  8000169       38     1                 Reset_Handler
+ 800017a  800017a        0     1                 CopyDataInit
+ 8000180  8000180        0     1                 LoopCopyDataInit
+ 800018e  800018e        0     1                 FillZerobss
+ 8000192  8000192        0     1                 LoopFillZerobss
+ 800019e  800019e        0     1                 LoopForever
+ 80001a0  80001a0        0     1                 $d
+ 80001b8  80001b8        2     1         CMakeFiles/STM_RTOS.dir/Src/startup_stm32f103xx.S.obj:(.text.Default_Handler)
+ 80001b8  80001b8        0     1                 Infinite_Loop
+ 80001b8  80001b8        0     1                 $t
+ 80001b8  80001b8        2     1                 Default_Handler
+ 80001b9  80001b9        2     1                 NMI_Handler
+ 80001b9  80001b9        2     1                 HardFault_Handler
+ 80001b9  80001b9        2     1                 MemManage_Handler
+ 80001b9  80001b9        2     1                 BusFault_Handler
+ 80001b9  80001b9        2     1                 UsageFault_Handler
+ 80001b9  80001b9        2     1                 SVC_Handler
+ 80001b9  80001b9        2     1                 DebugMon_Handler
+ 80001b9  80001b9        2     1                 PendSV_Handler
+ 80001b9  80001b9        2     1                 SysTick_Handler
+ 80001b9  80001b9        2     1                 WWDG_IRQHandler
+ 80001b9  80001b9        2     1                 PVD_IRQHandler
+ 80001b9  80001b9        2     1                 TAMPER_IRQHandler
+ 80001b9  80001b9        2     1                 RTC_IRQHandler
+ 80001b9  80001b9        2     1                 FLASH_IRQHandler
+ 80001b9  80001b9        2     1                 RCC_IRQHandler
+ 80001b9  80001b9        2     1                 EXTI0_IRQHandler
+ 80001b9  80001b9        2     1                 EXTI1_IRQHandler
+ 80001b9  80001b9        2     1                 EXTI2_IRQHandler
+ 80001b9  80001b9        2     1                 EXTI3_IRQHandler
+ 80001b9  80001b9        2     1                 EXTI4_IRQHandler
+ 80001b9  80001b9        2     1                 DMA1_Channel1_IRQHandler
+ 80001b9  80001b9        2     1                 DMA1_Channel2_IRQHandler
+ 80001b9  80001b9        2     1                 DMA1_Channel3_IRQHandler
+ 80001b9  80001b9        2     1                 DMA1_Channel4_IRQHandler
+ 80001b9  80001b9        2     1                 DMA1_Channel5_IRQHandler
+ 80001b9  80001b9        2     1                 DMA1_Channel6_IRQHandler
+ 80001b9  80001b9        2     1                 DMA1_Channel7_IRQHandler
+ 80001b9  80001b9        2     1                 ADC1_2_IRQHandler
+ 80001b9  80001b9        2     1                 USB_HP_CAN_TX_IRQHandler
+ 80001b9  80001b9        2     1                 USB_LP_CAN_RX0_IRQHandler
+ 80001b9  80001b9        2     1                 CAN_RX1_IRQHandler
+ 80001b9  80001b9        2     1                 CAN_SCE_IRQHandler
+ 80001b9  80001b9        2     1                 EXTI9_5_IRQHandler
+ 80001b9  80001b9        2     1                 TIM1_BRK_IRQHandler
+ 80001b9  80001b9        2     1                 TIM1_UP_IRQHandler
+ 80001b9  80001b9        2     1                 TIM1_TRG_COM_IRQHandler
+ 80001b9  80001b9        2     1                 TIM1_CC_IRQHandler
+ 80001b9  80001b9        2     1                 TIM2_IRQHandler
+ 80001b9  80001b9        2     1                 TIM3_IRQHandler
+ 80001b9  80001b9        2     1                 TIM4_IRQHandler
+ 80001b9  80001b9        2     1                 I2C1_EV_IRQHandler
+ 80001b9  80001b9        2     1                 I2C1_ER_IRQHandler
+ 80001b9  80001b9        2     1                 I2C2_EV_IRQHandler
+ 80001b9  80001b9        2     1                 I2C2_ER_IRQHandler
+ 80001b9  80001b9        2     1                 SPI1_IRQHandler
+ 80001b9  80001b9        2     1                 SPI2_IRQHandler
+ 80001b9  80001b9        2     1                 USART1_IRQHandler
+ 80001b9  80001b9        2     1                 USART2_IRQHandler
+ 80001b9  80001b9        2     1                 USART3_IRQHandler
+ 80001b9  80001b9        2     1                 EXTI15_10_IRQHandler
+ 80001b9  80001b9        2     1                 RTCAlarm_IRQHandler
+ 80001b9  80001b9        2     1                 TIM8_BRK_IRQHandler
+ 80001b9  80001b9        2     1                 TIM8_UP_IRQHandler
+ 80001b9  80001b9        2     1                 TIM8_TRG_COM_IRQHandler
+ 80001b9  80001b9        2     1                 TIM8_CC_IRQHandler
+ 80001b9  80001b9        2     1                 ADC3_IRQHandler
+ 80001b9  80001b9        2     1                 FSMC_IRQHandler
+ 80001b9  80001b9        2     1                 SDIO_IRQHandler
+ 80001b9  80001b9        2     1                 TIM5_IRQHandler
+ 80001b9  80001b9        2     1                 SPI3_IRQHandler
+ 80001b9  80001b9        2     1                 UART4_IRQHandler
+ 80001b9  80001b9        2     1                 UART5_IRQHandler
+ 80001b9  80001b9        2     1                 TIM6_IRQHandler
+ 80001b9  80001b9        2     1                 TIM7_IRQHandler
+ 80001b9  80001b9        2     1                 DMA2_Channel1_IRQHandler
+ 80001b9  80001b9        2     1                 DMA2_Channel2_IRQHandler
+ 80001b9  80001b9        2     1                 DMA2_Channel3_IRQHandler
+ 80001b9  80001b9        2     1                 DMA2_Channel4_5_IRQHandler
+ 80001bc  80001bc       30     4         /home/paula/.local/share/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_soft_nofp_exn_rtti_unaligned_size/lib/libc.a(libc_misc_init.c.o):(.text.__libc_init_array)
+ 80001bc  80001bc        0     1                 $t
+ 80001bd  80001bd       30     1                 __libc_init_array
+ 80001dc  80001dc        0     1                 $d
+ 80001ec  80001ec        0     1         . = ALIGN(4)
+ 80001ec  80001ec        0     1         _etext = .
+ 80001ec  80001ec        0     1 .rodata
+ 80001ec  80001ec        0     1         . = ALIGN(4)
+ 80001ec  80001ec        0     1         . = ALIGN(4)
+ 80001ec  80001ec        0     1 .ARM.extab
+ 80001ec  80001ec        0     1         . = ALIGN(4)
+ 80001ec  80001ec        0     1         . = ALIGN(4)
+ 80001ec  80001ec       10     4 .ARM
+ 80001ec  80001ec        0     1         . = ALIGN(4)
+ 80001ec  80001ec        0     1         __exidx_start = .
+ 80001ec  80001ec       10     4         <internal>:(.ARM.exidx)
+ 80001fc  80001fc        0     1         __exidx_end = .
+ 80001fc  80001fc        0     1         . = ALIGN(4)
+ 80001fc  80001fc        4     4 .preinit_array
+ 80001fc  80001fc        0     1         . = ALIGN(4)
+ 80001fc  80001fc        0     1         PROVIDE_HIDDEN (__preinit_array_start = .)
+ 80001fc  80001fc        4     4         /home/paula/.local/share/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_soft_nofp_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_read_tp.S.o):(.preinit_array)
+ 8000200  8000200        0     1         PROVIDE_HIDDEN (__preinit_array_end = .)
+ 8000200  8000200        0     1         . = ALIGN(4)
+ 8000200  8000200        0     1 .init_array
+ 8000200  8000200        0     1         . = ALIGN(4)
+ 8000200  8000200        0     1         PROVIDE_HIDDEN (__init_array_start = .)
+ 8000200  8000200        0     1         PROVIDE_HIDDEN (__init_array_end = .)
+ 8000200  8000200        0     1         . = ALIGN(4)
+ 8000200  8000200        0     1 .fini_array
+ 8000200  8000200        0     1         . = ALIGN(4)
+ 8000200  8000200        0     1         . = ALIGN(4)
+ 8000200  8000200        0     1 _sidata = LOADADDR(.data)
+20000000 20000000        0     4 .data
+20000000 20000000        0     1         _sdata = .
+20000000 20000000        0     1         . = ALIGN(4)
+20000000 20000000        0     4 .tdata
+20000000 20000000        0     1         . = ALIGN(4)
+20000000 20000000        0     1         _edata = .
+20000000 20000000        0     1 PROVIDE( __tdata_start = ADDR(.tdata) )
+20000000 20000000        0     4 .tbss
+20000000 20000000        0     1         _sbss = .
+20000000 20000000        0     1         __bss_start__ = _sbss
+20000000 20000000        0     1         . = ALIGN(4)
+20000000 20000000        0     1 PROVIDE( __tls_base = __tdata_start )
+20000000 20000000        0     1 PROVIDE( __tls_align = MAX(ALIGNOF(.tdata), ALIGNOF(.tbss)) )
+20000000 20000000        0     1 PROVIDE( __arm32_tls_tcb_offset = MAX(8, __tls_align) )
+20000000 20000000        4     4 .bss
+20000000 20000000        4     4         /home/paula/.local/share/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_soft_nofp_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_tls.c.o):(.bss.__tls)
+20000000 20000000        4     1                 __tls
+20000004 20000004        0     1         . = ALIGN(4)
+20000004 20000004        0     1         _ebss = .
+20000004 20000004        0     1         __bss_end__ = _ebss
+20000004 20000004      604     1 ._user_heap_stack
+20000004 20000004        4     1         . = ALIGN(8)
+20000008 20000008        0     1         PROVIDE ( _end = . )
+20000008 20000008      200     1         . = . + _Min_Heap_Size
+20000208 20000208      400     1         . = . + _Min_Stack_Size
+20000608 20000608        0     1         . = ALIGN(8)
+       0        0       45     1 .ARM.attributes
+       0        0       45     1         <internal>:(.ARM.attributes)
+       0        0      298     1 .debug_abbrev
+       0        0      157     1         CMakeFiles/STM_RTOS.dir/Src/syscall.c.obj:(.debug_abbrev)
+     157      157       87     1         CMakeFiles/STM_RTOS.dir/Src/sysmem.c.obj:(.debug_abbrev)
+     1de      1de       9b     1         CMakeFiles/STM_RTOS.dir/Src/main.c.obj:(.debug_abbrev)
+     279      279       1f     1         CMakeFiles/STM_RTOS.dir/Src/startup_stm32f103xx.S.obj:(.debug_abbrev)
+       0        0      8e5     1 .debug_info
+       0        0      587     1         CMakeFiles/STM_RTOS.dir/Src/syscall.c.obj:(.debug_info)
+     587      587       b4     1         CMakeFiles/STM_RTOS.dir/Src/sysmem.c.obj:(.debug_info)
+     63b      63b      102     1         CMakeFiles/STM_RTOS.dir/Src/main.c.obj:(.debug_info)
+     73d      73d      1a8     1         CMakeFiles/STM_RTOS.dir/Src/startup_stm32f103xx.S.obj:(.debug_info)
+       0        0      298     1 .debug_str_offsets
+       0        0      1d0     1         CMakeFiles/STM_RTOS.dir/Src/syscall.c.obj:(.debug_str_offsets)
+     1d0      1d0       4c     1         CMakeFiles/STM_RTOS.dir/Src/sysmem.c.obj:(.debug_str_offsets)
+     21c      21c       7c     1         CMakeFiles/STM_RTOS.dir/Src/main.c.obj:(.debug_str_offsets)
+       0        0      587     1 .debug_str
+       0        0      587     1         <internal>:(.debug_str)
+       0        0       84     1 .debug_addr
+       0        0       68     1         CMakeFiles/STM_RTOS.dir/Src/syscall.c.obj:(.debug_addr)
+      68       68       10     1         CMakeFiles/STM_RTOS.dir/Src/sysmem.c.obj:(.debug_addr)
+      78       78        c     1         CMakeFiles/STM_RTOS.dir/Src/main.c.obj:(.debug_addr)
+       0        0       92     1 .comment
+       0        0       92     1         <internal>:(.comment)
+       0        0      274     4 .debug_frame
+       0        0      1e8     4         CMakeFiles/STM_RTOS.dir/Src/syscall.c.obj:(.debug_frame)
+     1e8      1e8       34     4         /home/paula/.local/share/stm32cube/bundles/st-arm-clang/21.1.1+st.7/bin/../lib/clang-runtimes/arm-none-eabi/armv7m_soft_nofp_exn_rtti_unaligned_size/lib/libc.a(libc_picolib_machine_arm_read_tp.S.o):(.debug_frame)
+     21c      21c       30     4         CMakeFiles/STM_RTOS.dir/Src/sysmem.c.obj:(.debug_frame)
+     24c      24c       28     4         CMakeFiles/STM_RTOS.dir/Src/main.c.obj:(.debug_frame)
+       0        0      4a1     1 .debug_line
+       0        0      288     1         CMakeFiles/STM_RTOS.dir/Src/syscall.c.obj:(.debug_line)
+     288      288      10a     1         CMakeFiles/STM_RTOS.dir/Src/sysmem.c.obj:(.debug_line)
+     392      392       a3     1         CMakeFiles/STM_RTOS.dir/Src/main.c.obj:(.debug_line)
+     435      435       6c     1         CMakeFiles/STM_RTOS.dir/Src/startup_stm32f103xx.S.obj:(.debug_line)
+       0        0      558     1 .debug_line_str
+       0        0      558     1         <internal>:(.debug_line_str)
+       0        0       28     1 .debug_aranges
+       0        0       28     1         CMakeFiles/STM_RTOS.dir/Src/startup_stm32f103xx.S.obj:(.debug_aranges)
+       0        0       19     1 .debug_rnglists
+       0        0       19     1         CMakeFiles/STM_RTOS.dir/Src/startup_stm32f103xx.S.obj:(.debug_rnglists)
+       0        0      9e0     4 .symtab
+       0        0      9e0     4         <internal>:(.symtab)
+       0        0      13b     1 .shstrtab
+       0        0      13b     1         <internal>:(.shstrtab)
+       0        0      8cb     1 .strtab
+       0        0      8cb     1         <internal>:(.strtab)

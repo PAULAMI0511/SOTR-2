@@ -1,0 +1,3 @@
+/home/paula/testcube/STM_RTOS/build/Debug/CMakeFiles/STM_RTOS.dir
+/home/paula/testcube/STM_RTOS/build/Debug/CMakeFiles/edit_cache.dir
+/home/paula/testcube/STM_RTOS/build/Debug/CMakeFiles/rebuild_cache.dir
