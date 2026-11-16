@@ -47,7 +47,12 @@
 #define ERROR_FULL 0XE9
 
 #define QUEUE_BASE_ERROR 0x0100
-#define TASK_BASE_ERROR 0x0200
+#define LIST_BASE_ERROR 0x0200
+#define TASK_BASE_ERROR 0x0300
+#define SCHEDULER_BASE_ERROR 0x0400
+#define PORTABLE_BASE_ERROR 0x0500
+#define RTOS_BASE_ERROR 0x0600
+#define MUTEX_BASE_ERROR 0x0100
 
 /***********************************************************
  *              TIPOS PUBLICOS DEL _MODULO_H_               *
