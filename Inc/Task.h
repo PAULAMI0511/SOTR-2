@@ -6,7 +6,7 @@
  ***********************************************************/
 
 #include "AppTypes.h"
-
+#include "Queue.h"
 /***********************************************************
  *           DEFINICION DE ERRORES  DEL _TASK_H_          *
  ***********************************************************/
@@ -68,7 +68,8 @@ typedef struct {
   u16 TaskStackSize;
   u32 TaskStatePointer;
   TaskFunctionCallback TaskFunction;
-} TCB_t;
+  QueueElement_t TaskQueueElement;
+} TCB_t, *TCB_Handle_t;
 
 /***********************************************************
  *           FUNCIONES PUBLICAS  DEL _TASK_H_             *
