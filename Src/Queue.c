@@ -28,8 +28,7 @@
  * @note   The queue must be properly initialized before use.
  */
 
-u16 Queue_Init(QueueHandle_t Queue);
-{
+u16 Queue_Init(QueueHandle_t Queue) {
   If(Queue == NULL) { return QUEUE_ERROR_NULL_PARAM; }
   Queue->head = NULL;
   Queue->tail = NULL;
@@ -46,8 +45,7 @@ u16 Queue_Init(QueueHandle_t Queue);
  * @return QUEUE_ERROR_EMPTY if the queue is empty.
  */
 
-u16 Queue_Dequeue(QueueHandle_t Queue, QueueElementHandle_t Element);
-{
+u16 Queue_Dequeue(QueueHandle_t Queue, QueueElementHandle_t Element) {
   if (Queue == NULL || Element == NULL) {
     return QUEUE_ERROR_NULL_PARAM;
   }
@@ -73,8 +71,7 @@ u16 Queue_Dequeue(QueueHandle_t Queue, QueueElementHandle_t Element);
  * @return QUEUE_ERROR_NULL_PARAM if the provided Queue or Element is NULL.
  */
 
-u16 Queue_Enqueue(QueueHandle_t Queue, QueueElementHandle_t Element);
-{
+u16 Queue_Enqueue(QueueHandle_t Queue, QueueElementHandle_t Element) {
   if (Queue == NULL || Element == NULL) {
     return QUEUE_ERROR_NULL_PARAM;
   }
@@ -96,8 +93,7 @@ u16 Queue_Enqueue(QueueHandle_t Queue, QueueElementHandle_t Element);
  * @return The number of elements in the queue, or 0 if the queue is NULL.
  */
 
-u16 Queue_Size(QueueHandle_t Queue);
-{
+u16 Queue_Size(QueueHandle_t Queue) {
   if (Queue == NULL) {
     return 0;
   }
@@ -114,8 +110,7 @@ u16 Queue_Size(QueueHandle_t Queue);
  * @return QUEUE_ERROR_EMPTY if the queue is empty.
  */
 
-u16 Queue_Peek(QueueHandle_t Queue, QueueElementHandle_t Element);
-{
+u16 Queue_Peek(QueueHandle_t Queue, QueueElementHandle_t Element) {
   if (Queue == NULL || Element == NULL) {
     return QUEUE_ERROR_NULL_PARAM;
   }
