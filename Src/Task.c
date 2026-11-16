@@ -21,8 +21,7 @@
 
 u16 Task_Create(TCB_t *TaskControlBlock, TaskFunctionCallback TaskFunction,
                 u8 TaskPriority, pu8 TaskStack, u16 TaskStackSize,
-                const char *TaskName);
-{
+                const char *TaskName) {
   if (TaskControlBlock == NULL) {
     return TASK_ERROR_NULL_PARAM;
   }
@@ -36,56 +35,49 @@ u16 Task_Create(TCB_t *TaskControlBlock, TaskFunctionCallback TaskFunction,
   return TASK_OK;
 }
 
-u16 Task_GetIdByName(const char *TaskName);
-{
+u16 Task_GetIdByName(const char *TaskName) {
   if (TaskName == NULL) {
     return TASK_ERROR_NULL_PARAM;
   }
   return TASK_OK;
 }
 
-u16 Task_Delete(TCB_t *TaskControlBlock);
-{
+u16 Task_Delete(TCB_t *TaskControlBlock) {
   if (TaskControlBlock == NULL) {
     return TASK_ERROR_NULL_PARAM;
   }
   return TASK_OK;
 }
 
-u16 Task_Start(TCB_t *TaskControlBlock);
-{
+u16 Task_Start(TCB_t *TaskControlBlock) {
   if (TaskControlBlock == NULL) {
     return TASK_ERROR_NULL_PARAM;
   }
   return TASK_OK;
 }
 
-u16 Task_Stop(TCB_t *TaskControlBlock);
-{
+u16 Task_Stop(TCB_t *TaskControlBlock) {
   if (TaskControlBlock == NULL) {
     return TASK_ERROR_NULL_PARAM;
   }
   return TASK_OK;
 }
 
-u16 Task_Suspend(TCB_t *TaskControlBlock);
-{
+u16 Task_Suspend(TCB_t *TaskControlBlock) {
   if (TaskControlBlock == NULL) {
     return TASK_ERROR_NULL_PARAM;
   }
   return TASK_OK;
 }
 
-u16 Task_Resume(TCB_t *TaskControlBlock);
-{
+u16 Task_Resume(TCB_t *TaskControlBlock) {
   if (TaskControlBlock == NULL) {
     return TASK_ERROR_NULL_PARAM;
   }
   return TASK_OK;
 }
 
-u16 Task_Yield(TCB_t *TaskControlBlock);
-{
+u16 Task_Yield(TCB_t *TaskControlBlock) {
   if (TaskControlBlock == NULL) {
     return TASK_ERROR_NULL_PARAM;
   }
