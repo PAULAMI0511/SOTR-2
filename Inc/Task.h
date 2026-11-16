@@ -66,9 +66,10 @@ typedef struct {
   u8 TaskPriority;
   pu8 TaskStack;
   u16 TaskStackSize;
-  u32 TaskStatePointer;
+  u32 TaskStackPointer; /* SP guardado cuando la tarea no esta corriendo */
   TaskFunctionCallback TaskFunction;
-  QueueElement_t TaskQueueElement;
+  QueueElement_t TaskQueueElement; /* nodo para meter la tarea en colas */
+  u64 TaskWakeTick;                /* tick en que despierta (Task_Delay) */
 } TCB_t, *TCB_Handle_t;
 
 /***********************************************************
@@ -85,5 +86,6 @@ u16 Task_Stop(TCB_t *TaskControlBlock);
 u16 Task_Suspend(TCB_t *TaskControlBlock);
 u16 Task_Resume(TCB_t *TaskControlBlock);
 u16 Task_Yield(TCB_t *TaskControlBlock);
+u16 Task_Delay(u32 Milliseconds);
 
 #endif // _TASK_H_

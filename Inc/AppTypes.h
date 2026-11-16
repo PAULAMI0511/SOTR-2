@@ -17,6 +17,10 @@
 #define TRUE 1
 #endif
 
+#ifndef NULL
+#define NULL ((void *)0)
+#endif
+
 /***********************************************************
  *           DEFINICIONES DE ERRORES                       *
  ***********************************************************/
@@ -65,8 +69,8 @@ typedef unsigned short u16;
 typedef signed short s16;
 typedef unsigned int u32;
 typedef signed int s32;
-typedef unsigned long u64;
-typedef signed long s64;
+typedef unsigned long long u64;
+typedef signed long long s64;
 typedef float f;
 typedef double d;
 typedef void v;
