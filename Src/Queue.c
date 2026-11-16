@@ -29,7 +29,9 @@
  */
 
 u16 Queue_Init(QueueHandle_t Queue) {
-  If(Queue == NULL) { return QUEUE_ERROR_NULL_PARAM; }
+  if (Queue == NULL) {
+    return QUEUE_ERROR_NULL_PARAM;
+  }
   Queue->head = NULL;
   Queue->tail = NULL;
   Queue->size = 0;
@@ -49,17 +51,17 @@ u16 Queue_Dequeue(QueueHandle_t Queue, QueueElementHandle_t Element) {
   if (Queue == NULL || Element == NULL) {
     return QUEUE_ERROR_NULL_PARAM;
   }
-  if (Queue->Size == 0)
-    || (Queue->head == NULL) { return QUEUE_ERROR_EMPTY; }
+  if ((Queue->size == 0) || (Queue->head == NULL)) {
+    return QUEUE_ERROR_EMPTY;
+  }
   *Element = *Queue->head;
   Queue->head = Queue->head->next;
-  Queue->Size--;
-  if (Queue->Size == 0)
-    || (Queue->head == NULL) {
-      Queue->Tail = NULL;
-      Queue->Head = NULL;
-      Queue->Size = 0;
-    }
+  Queue->size--;
+  if ((Queue->size == 0) || (Queue->head == NULL)) {
+    Queue->tail = NULL;
+    Queue->head = NULL;
+    Queue->size = 0;
+  }
   return QUEUE_OK;
 }
 
@@ -77,11 +79,11 @@ u16 Queue_Enqueue(QueueHandle_t Queue, QueueElementHandle_t Element) {
   }
   Element->next = NULL;
   if (Queue->tail == NULL) {
-    Queue->Head = Element;
-    Queue->Tail = Element;
+    Queue->head = Element;
+    Queue->tail = Element;
   } else {
-    Queue->Tail->next = Element;
-    Queue->Tail = Element;
+    Queue->tail->next = Element;
+    Queue->tail = Element;
   }
   Queue->size++;
   return QUEUE_OK;
@@ -117,8 +119,8 @@ u16 Queue_Peek(QueueHandle_t Queue, QueueElementHandle_t Element) {
   if (Queue->head == NULL) {
     return QUEUE_ERROR_EMPTY;
   }
-  Element->data = Queue->head->data;
-  Element->Next = Queue->head->Next;
+  Element->Data = Queue->head->Data;
+  Element->next = Queue->head->next;
   return QUEUE_OK;
 }
 
