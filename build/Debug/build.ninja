@@ -79,14 +79,74 @@ build CMakeFiles/STM_RTOS.dir/Src/main.c.obj: C_COMPILER__STM_RTOS_unscanned_Deb
   OBJECT_FILE_DIR = CMakeFiles/STM_RTOS.dir/Src
   TARGET_SUPPORT_DIR = CMakeFiles/STM_RTOS.dir
 
-build CMakeFiles/STM_RTOS.dir/Src/startup_stm32f103xx.S.obj: ASM_COMPILER__STM_RTOS_unscanned_Debug /home/paula/testcube/STM_RTOS/Src/startup_stm32f103xx.S || cmake_object_order_depends_target_STM_RTOS
+build CMakeFiles/STM_RTOS.dir/Src/Queue.c.obj: C_COMPILER__STM_RTOS_unscanned_Debug /home/paula/testcube/STM_RTOS/Src/Queue.c || cmake_object_order_depends_target_STM_RTOS
   CONFIG = Debug
   DEFINES = -DDEBUG -DRTE_DEVICE_STARTUP_STM32F1XX
-  DEP_FILE = CMakeFiles/STM_RTOS.dir/Src/startup_stm32f103xx.S.obj.d
-  FLAGS = --target=armv7m-st-none-eabi -mcpu=cortex-m3 -mfloat-abi=soft -mlittle-endian -mthumb -fstack-usage -std=gnu11 -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb -x assembler-with-cpp -MP
+  DEP_FILE = CMakeFiles/STM_RTOS.dir/Src/Queue.c.obj.d
+  FLAGS = -Wno-comment  --target=armv7m-st-none-eabi -mcpu=cortex-m3 -mfloat-abi=soft -mlittle-endian -mthumb -fstack-usage -std=gnu11 -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb
   INCLUDES = -I/home/paula/testcube/STM_RTOS/Inc
   OBJECT_DIR = CMakeFiles/STM_RTOS.dir
   OBJECT_FILE_DIR = CMakeFiles/STM_RTOS.dir/Src
+  TARGET_SUPPORT_DIR = CMakeFiles/STM_RTOS.dir
+
+build CMakeFiles/STM_RTOS.dir/Src/Task.c.obj: C_COMPILER__STM_RTOS_unscanned_Debug /home/paula/testcube/STM_RTOS/Src/Task.c || cmake_object_order_depends_target_STM_RTOS
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DRTE_DEVICE_STARTUP_STM32F1XX
+  DEP_FILE = CMakeFiles/STM_RTOS.dir/Src/Task.c.obj.d
+  FLAGS = -Wno-comment  --target=armv7m-st-none-eabi -mcpu=cortex-m3 -mfloat-abi=soft -mlittle-endian -mthumb -fstack-usage -std=gnu11 -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb
+  INCLUDES = -I/home/paula/testcube/STM_RTOS/Inc
+  OBJECT_DIR = CMakeFiles/STM_RTOS.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM_RTOS.dir/Src
+  TARGET_SUPPORT_DIR = CMakeFiles/STM_RTOS.dir
+
+build CMakeFiles/STM_RTOS.dir/Src/Scheduler.c.obj: C_COMPILER__STM_RTOS_unscanned_Debug /home/paula/testcube/STM_RTOS/Src/Scheduler.c || cmake_object_order_depends_target_STM_RTOS
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DRTE_DEVICE_STARTUP_STM32F1XX
+  DEP_FILE = CMakeFiles/STM_RTOS.dir/Src/Scheduler.c.obj.d
+  FLAGS = -Wno-comment  --target=armv7m-st-none-eabi -mcpu=cortex-m3 -mfloat-abi=soft -mlittle-endian -mthumb -fstack-usage -std=gnu11 -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb
+  INCLUDES = -I/home/paula/testcube/STM_RTOS/Inc
+  OBJECT_DIR = CMakeFiles/STM_RTOS.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM_RTOS.dir/Src
+  TARGET_SUPPORT_DIR = CMakeFiles/STM_RTOS.dir
+
+build CMakeFiles/STM_RTOS.dir/Src/Portable.c.obj: C_COMPILER__STM_RTOS_unscanned_Debug /home/paula/testcube/STM_RTOS/Src/Portable.c || cmake_object_order_depends_target_STM_RTOS
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DRTE_DEVICE_STARTUP_STM32F1XX
+  DEP_FILE = CMakeFiles/STM_RTOS.dir/Src/Portable.c.obj.d
+  FLAGS = -Wno-comment  --target=armv7m-st-none-eabi -mcpu=cortex-m3 -mfloat-abi=soft -mlittle-endian -mthumb -fstack-usage -std=gnu11 -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb
+  INCLUDES = -I/home/paula/testcube/STM_RTOS/Inc
+  OBJECT_DIR = CMakeFiles/STM_RTOS.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM_RTOS.dir/Src
+  TARGET_SUPPORT_DIR = CMakeFiles/STM_RTOS.dir
+
+build CMakeFiles/STM_RTOS.dir/Src/Rtos.c.obj: C_COMPILER__STM_RTOS_unscanned_Debug /home/paula/testcube/STM_RTOS/Src/Rtos.c || cmake_object_order_depends_target_STM_RTOS
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DRTE_DEVICE_STARTUP_STM32F1XX
+  DEP_FILE = CMakeFiles/STM_RTOS.dir/Src/Rtos.c.obj.d
+  FLAGS = -Wno-comment  --target=armv7m-st-none-eabi -mcpu=cortex-m3 -mfloat-abi=soft -mlittle-endian -mthumb -fstack-usage -std=gnu11 -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb
+  INCLUDES = -I/home/paula/testcube/STM_RTOS/Inc
+  OBJECT_DIR = CMakeFiles/STM_RTOS.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM_RTOS.dir/Src
+  TARGET_SUPPORT_DIR = CMakeFiles/STM_RTOS.dir
+
+build CMakeFiles/STM_RTOS.dir/Src/Mutex.c.obj: C_COMPILER__STM_RTOS_unscanned_Debug /home/paula/testcube/STM_RTOS/Src/Mutex.c || cmake_object_order_depends_target_STM_RTOS
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DRTE_DEVICE_STARTUP_STM32F1XX
+  DEP_FILE = CMakeFiles/STM_RTOS.dir/Src/Mutex.c.obj.d
+  FLAGS = -Wno-comment  --target=armv7m-st-none-eabi -mcpu=cortex-m3 -mfloat-abi=soft -mlittle-endian -mthumb -fstack-usage -std=gnu11 -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb
+  INCLUDES = -I/home/paula/testcube/STM_RTOS/Inc
+  OBJECT_DIR = CMakeFiles/STM_RTOS.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM_RTOS.dir/Src
+  TARGET_SUPPORT_DIR = CMakeFiles/STM_RTOS.dir
+
+build CMakeFiles/STM_RTOS.dir/Startup/startup_stm32f103xx.S.obj: ASM_COMPILER__STM_RTOS_unscanned_Debug /home/paula/testcube/STM_RTOS/Startup/startup_stm32f103xx.S || cmake_object_order_depends_target_STM_RTOS
+  CONFIG = Debug
+  DEFINES = -DDEBUG -DRTE_DEVICE_STARTUP_STM32F1XX
+  DEP_FILE = CMakeFiles/STM_RTOS.dir/Startup/startup_stm32f103xx.S.obj.d
+  FLAGS = --target=armv7m-st-none-eabi -mcpu=cortex-m3 -mfloat-abi=soft -mlittle-endian -mthumb -fstack-usage -std=gnu11 -Wall -Wextra -Wpedantic -Wno-unused-parameter -O0 -g3 -ggdb -x assembler-with-cpp -MP
+  INCLUDES = -I/home/paula/testcube/STM_RTOS/Inc
+  OBJECT_DIR = CMakeFiles/STM_RTOS.dir
+  OBJECT_FILE_DIR = CMakeFiles/STM_RTOS.dir/Startup
   TARGET_SUPPORT_DIR = CMakeFiles/STM_RTOS.dir
 
 
@@ -97,7 +157,7 @@ build CMakeFiles/STM_RTOS.dir/Src/startup_stm32f103xx.S.obj: ASM_COMPILER__STM_R
 #############################################
 # Link the executable STM_RTOS.elf
 
-build STM_RTOS.elf: C_EXECUTABLE_LINKER__STM_RTOS_Debug CMakeFiles/STM_RTOS.dir/Src/syscall.c.obj CMakeFiles/STM_RTOS.dir/Src/sysmem.c.obj CMakeFiles/STM_RTOS.dir/Src/main.c.obj CMakeFiles/STM_RTOS.dir/Src/startup_stm32f103xx.S.obj | stm32f103x8_flash.ld
+build STM_RTOS.elf: C_EXECUTABLE_LINKER__STM_RTOS_Debug CMakeFiles/STM_RTOS.dir/Src/syscall.c.obj CMakeFiles/STM_RTOS.dir/Src/sysmem.c.obj CMakeFiles/STM_RTOS.dir/Src/main.c.obj CMakeFiles/STM_RTOS.dir/Src/Queue.c.obj CMakeFiles/STM_RTOS.dir/Src/Task.c.obj CMakeFiles/STM_RTOS.dir/Src/Scheduler.c.obj CMakeFiles/STM_RTOS.dir/Src/Portable.c.obj CMakeFiles/STM_RTOS.dir/Src/Rtos.c.obj CMakeFiles/STM_RTOS.dir/Src/Mutex.c.obj CMakeFiles/STM_RTOS.dir/Startup/startup_stm32f103xx.S.obj
   CONFIG = Debug
   FLAGS = -Wno-comment
   LINK_FLAGS = --target=armv7m-st-none-eabi -mcpu=cortex-m3 -mfloat-abi=soft -mlittle-endian -mthumb -T/home/paula/testcube/STM_RTOS/build/Debug/stm32f103x8_flash.ld -Wl,-Map=/home/paula/testcube/STM_RTOS/build/Debug/STM_RTOS.map -Wl,--start-group -lc -lm -lc++ -lc++abi -z noexecstack -Wl,--end-group -Wl,-z,max-page-size=8 -Wl,--print-memory-usage -Wl,--gc-sections
@@ -154,14 +214,14 @@ build all: phony STM_RTOS.elf
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /home/paula/testcube/STM_RTOS/build/Debug/cmake_install.cmake: RERUN_CMAKE | /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeASMInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeCInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeCXXInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeCommonLanguageInclude.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeGenericSystem.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeInitializeConfigs.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeLanguageInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeSystemSpecificInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeSystemSpecificInitialize.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/Clang-ASM.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/Clang-C.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/Clang-CXX.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/Clang.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/GNU.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Internal/CMakeASMLinkerInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Internal/CMakeCLinkerInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Internal/CMakeCXXLinkerInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Internal/CMakeCommonLinkerInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Platform/Generic.cmake /home/paula/testcube/STM_RTOS/CMakeLists.txt /home/paula/testcube/STM_RTOS/cmake/components.cmake /home/paula/testcube/STM_RTOS/cmake/files.cmake /home/paula/testcube/STM_RTOS/cmake/flags.cmake /home/paula/testcube/STM_RTOS/cmake/starm-clang.cmake /home/paula/testcube/STM_RTOS/cmake/target.cmake /home/paula/testcube/STM_RTOS/stm32f103x8_flash.ld CMakeCache.txt CMakeFiles/4.4.0/CMakeASMCompiler.cmake CMakeFiles/4.4.0/CMakeCCompiler.cmake CMakeFiles/4.4.0/CMakeCXXCompiler.cmake CMakeFiles/4.4.0/CMakeSystem.cmake
+build build.ninja /home/paula/testcube/STM_RTOS/build/Debug/cmake_install.cmake: RERUN_CMAKE | /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeASMInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeCInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeCXXInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeCommonLanguageInclude.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeGenericSystem.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeInitializeConfigs.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeLanguageInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeSystemSpecificInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeSystemSpecificInitialize.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/Clang-ASM.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/Clang-C.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/Clang-CXX.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/Clang.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/GNU.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Internal/CMakeASMLinkerInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Internal/CMakeCLinkerInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Internal/CMakeCXXLinkerInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Internal/CMakeCommonLinkerInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Platform/Generic.cmake /home/paula/testcube/STM_RTOS/CMakeLists.txt /home/paula/testcube/STM_RTOS/cmake/components.cmake /home/paula/testcube/STM_RTOS/cmake/files.cmake /home/paula/testcube/STM_RTOS/cmake/flags.cmake /home/paula/testcube/STM_RTOS/cmake/starm-clang.cmake /home/paula/testcube/STM_RTOS/cmake/target.cmake CMakeCache.txt CMakeFiles/4.4.0/CMakeASMCompiler.cmake CMakeFiles/4.4.0/CMakeCCompiler.cmake CMakeFiles/4.4.0/CMakeCXXCompiler.cmake CMakeFiles/4.4.0/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeASMInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeCInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeCXXInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeCommonLanguageInclude.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeGenericSystem.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeInitializeConfigs.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeLanguageInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeSystemSpecificInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeSystemSpecificInitialize.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/Clang-ASM.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/Clang-C.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/Clang-CXX.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/Clang.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/GNU.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Internal/CMakeASMLinkerInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Internal/CMakeCLinkerInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Internal/CMakeCXXLinkerInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Internal/CMakeCommonLinkerInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Platform/Generic.cmake /home/paula/testcube/STM_RTOS/CMakeLists.txt /home/paula/testcube/STM_RTOS/cmake/components.cmake /home/paula/testcube/STM_RTOS/cmake/files.cmake /home/paula/testcube/STM_RTOS/cmake/flags.cmake /home/paula/testcube/STM_RTOS/cmake/starm-clang.cmake /home/paula/testcube/STM_RTOS/cmake/target.cmake /home/paula/testcube/STM_RTOS/stm32f103x8_flash.ld CMakeCache.txt CMakeFiles/4.4.0/CMakeASMCompiler.cmake CMakeFiles/4.4.0/CMakeCCompiler.cmake CMakeFiles/4.4.0/CMakeCXXCompiler.cmake CMakeFiles/4.4.0/CMakeSystem.cmake: phony
+build /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeASMInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeCInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeCXXInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeCommonLanguageInclude.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeGenericSystem.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeInitializeConfigs.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeLanguageInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeSystemSpecificInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/CMakeSystemSpecificInitialize.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/CMakeCommonCompilerMacros.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/Clang-ASM.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/Clang-C.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/Clang-CXX.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/Clang.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Compiler/GNU.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Internal/CMakeASMLinkerInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Internal/CMakeCLinkerInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Internal/CMakeCXXLinkerInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Internal/CMakeCommonLinkerInformation.cmake /home/paula/.local/share/stm32cube/bundles/cmake/4.4.0+st.1/share/cmake-4.4/Modules/Platform/Generic.cmake /home/paula/testcube/STM_RTOS/CMakeLists.txt /home/paula/testcube/STM_RTOS/cmake/components.cmake /home/paula/testcube/STM_RTOS/cmake/files.cmake /home/paula/testcube/STM_RTOS/cmake/flags.cmake /home/paula/testcube/STM_RTOS/cmake/starm-clang.cmake /home/paula/testcube/STM_RTOS/cmake/target.cmake CMakeCache.txt CMakeFiles/4.4.0/CMakeASMCompiler.cmake CMakeFiles/4.4.0/CMakeCCompiler.cmake CMakeFiles/4.4.0/CMakeCXXCompiler.cmake CMakeFiles/4.4.0/CMakeSystem.cmake: phony
 
 
 #############################################

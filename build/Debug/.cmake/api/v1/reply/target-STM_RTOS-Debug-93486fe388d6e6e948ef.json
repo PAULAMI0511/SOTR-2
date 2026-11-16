@@ -82,7 +82,7 @@
 			{
 				"command" : 6,
 				"file" : 2,
-				"line" : 2,
+				"line" : 1,
 				"parent" : 9
 			}
 		]
@@ -180,7 +180,13 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
 			]
 		},
 		{
@@ -276,7 +282,7 @@
 			"language" : "ASM",
 			"sourceIndexes" : 
 			[
-				3
+				9
 			]
 		}
 	],
@@ -397,14 +403,20 @@
 			[
 				0,
 				1,
-				2
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				3
+				9
 			]
 		}
 	],
@@ -446,8 +458,68 @@
 			[
 				10
 			],
+			"compileGroupIndex" : 0,
+			"path" : "Src/Queue.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"backtraces" : 
+			[
+				10
+			],
+			"compileGroupIndex" : 0,
+			"path" : "Src/Task.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"backtraces" : 
+			[
+				10
+			],
+			"compileGroupIndex" : 0,
+			"path" : "Src/Scheduler.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"backtraces" : 
+			[
+				10
+			],
+			"compileGroupIndex" : 0,
+			"path" : "Src/Portable.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"backtraces" : 
+			[
+				10
+			],
+			"compileGroupIndex" : 0,
+			"path" : "Src/Rtos.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"backtraces" : 
+			[
+				10
+			],
+			"compileGroupIndex" : 0,
+			"path" : "Src/Mutex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 10,
+			"backtraces" : 
+			[
+				10
+			],
 			"compileGroupIndex" : 1,
-			"path" : "Src/startup_stm32f103xx.S",
+			"path" : "Startup/startup_stm32f103xx.S",
 			"sourceGroupIndex" : 1
 		}
 	],

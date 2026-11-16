@@ -174,9 +174,6 @@
 		},
 		{
 			"path" : "cmake/files.cmake"
-		},
-		{
-			"path" : "stm32f103x8_flash.ld"
 		}
 	],
 	"kind" : "cmakeFiles",
