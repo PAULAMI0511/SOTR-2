@@ -29,30 +29,28 @@
 #define TASK_ERROR_UNSUPPORTED TASK_BASE_ERROR | ERROR_UNSUPPORTED
 #define TASK_ERROR_HARDWARE_FAILURE TASK_BASE_ERROR | ERROR_HARDWARE_FAILURE
 #define TASK_ERROR_SOFTWARE_FAILURE TASK_BASE_ERROR | ERROR_SOFTWARE_FAILURE
-#define TASK_ERROR_COMMUNICATION_FAILURE
-TASK_BASE_ERROR |
-    ERROR_COMMUNICATION_FAILURE
+#define TASK_ERROR_COMMUNICATION_FAILURE                                       \
+  TASK_BASE_ERROR | ERROR_COMMUNICATION_FAILURE
 #define TASK_ERROR_SECURITY_FAILURE TASK_BASE_ERROR | ERROR_SECURITY_FAILURE
 #define TASK_ERROR_EMPTY TASK_BASE_ERROR | ERROR_EMPTY
 #define TASK_ERROR_INVALID_STATE TASK_BASE_ERROR | ERROR_INVALID_STATE
 #define TASK_ERROR_NOT_READY TASK_BASE_ERROR | ERROR_NOT_READY
 #define TASK_ERROR_INVALID_OPERATION TASK_BASE_ERROR | ERROR_INVALID_OPERATION
-#define TASK_ERROR_RESOURCE_UNAVAILABLE
-        TASK_BASE_ERROR |
-    ERROR_RESOURCE_UNAVAILABLE
+#define TASK_ERROR_RESOURCE_UNAVAILABLE                                        \
+  TASK_BASE_ERROR | ERROR_RESOURCE_UNAVAILABLE
 #define TASK_ERROR_OPERATION_FAILED TASK_BASE_ERROR | ERROR_OPERATION_FAILED
 #define TASK_ERROR_DATA_CORRUPTION TASK_BASE_ERROR | ERROR_DATA_CORRUPTION
 #define TASK_ERROR_FULL TASK_BASE_ERROR | ERROR_FULL
 
-    /***********************************************************
-     *           DEFINICIONES PUBLICAS  DEL _TASK_H_          *
-     ***********************************************************/
+/***********************************************************
+ *           DEFINICIONES PUBLICAS  DEL _TASK_H_          *
+ ***********************************************************/
 
-    /***********************************************************
-     *              TIPOS PUBLICOS DEL _TASK_H_               *
-     ***********************************************************/
+/***********************************************************
+ *              TIPOS PUBLICOS DEL _TASK_H_               *
+ ***********************************************************/
 
-    typedef void (*TaskFunctionCallback)(void);
+typedef void (*TaskFunctionCallback)(void);
 
 typedef enum {
   TASK_READY = 0,
