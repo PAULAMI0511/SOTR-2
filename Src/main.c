@@ -11,9 +11,16 @@
  *  Conexiones (STM32F103 "Blue Pill") - cambialas si usas otros pines:
  *    LED1 -> PA0      LED2 -> PA1      LED3 -> PA2      LED4 -> PA3
  *    BOTON -> PB0 (el otro lado del boton a GND, se usa pull-up interno)
+ *
+ *  SEGUNDO ENTREGABLE (PONG): poner APP_PONG en 1. El juego esta en
+ *  Pong.c / PongGame.c y sus conexiones estan descritas en Pong.h.
  ******************************************************************************
  */
 
+/* 1 = segundo entregable (PONG), 0 = primer entregable (4 LEDs) */
+#define APP_PONG 1
+
+#include "Pong.h"
 #include "RtosIncludes.h"
 
 /***********************************************************
@@ -85,6 +92,10 @@ int main(void) {
   /* Inicializar el RTOS */
   Rtos_Init();
 
+#if APP_PONG
+  /* Segundo entregable: perifericos y tareas del PONG */
+  Pong_Init();
+#else
   /* Inicializar los pines */
   GPIO_Init();
 
@@ -97,6 +108,7 @@ int main(void) {
               "Led1Hz");
   Task_Create(&TcbLed05Hz, TaskLed05Hz, 3, StackLed05Hz, RTOS_MIN_STACK_SIZE,
               "Led05Hz");
+#endif
 
   /* Arrancar el scheduler (no deberia regresar) */
   Rtos_Start();
