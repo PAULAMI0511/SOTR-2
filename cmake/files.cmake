@@ -8,5 +8,13 @@ target_sources(${PROJECT_NAME} PRIVATE
     "${CMAKE_CURRENT_SOURCE_DIR}/Src/Portable.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/Src/Rtos.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/Src/Mutex.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Src/Semaphore.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Src/Gpio.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Src/I2c.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Src/Ssd1306.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Src/Adc.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Src/Buzzer.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Src/PongGame.c"
+    "${CMAKE_CURRENT_SOURCE_DIR}/Src/Pong.c"
     "${CMAKE_CURRENT_SOURCE_DIR}/Startup/startup_stm32f103xx.S"
 )
