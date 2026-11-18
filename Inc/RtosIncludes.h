@@ -20,6 +20,7 @@
 #include "Queue.h"
 #include "Rtos.h"
 #include "Scheduler.h"
+#include "Semaphore.h"
 #include "Task.h"
 
 #endif // _RTOS_INCLUDES_H_
